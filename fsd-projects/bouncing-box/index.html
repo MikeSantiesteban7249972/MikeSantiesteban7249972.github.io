@@ -71,6 +71,8 @@
         // TODO 2 - Variable declarations
         var positionX=0
         positionX= positionX+10
+        var points=0
+        var speed=10
 
 
 
@@ -83,6 +85,8 @@
          */
         function update() {
           moveboxto(positionX);//
+          positionx=positionx+speed;
+          
 
         
 
@@ -99,6 +103,7 @@
         function handleBoxClick(positionX=0
          
         ) { changeBoxText(0);
+          speed=speed+3
 
 
 
