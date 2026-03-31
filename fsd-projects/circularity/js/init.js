@@ -21,7 +21,7 @@ var init = function (window) {
         
         // TODO 1 : Declare and initialize our variables
 var circle
-var circles=
+var circles= []
 
 
         // TODO 2 : Create a function that draws a circle 
@@ -101,7 +101,14 @@ game.checkCirclePosition(circles[ 3 ])
 game.checkCirclePosition(circles[ 4 ])
 
             // TODO 8 / TODO 9 : Iterate over the array
-           
+            for (var i = 0; i < circles.length; i++) {
+
+               physikz.updatePosition(circles[i]);
+
+               game.checkCirclePosition(circles[i]);
+
+
+}
             
         }
     
